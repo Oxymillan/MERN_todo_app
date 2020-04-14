@@ -4,14 +4,17 @@
   "description": "Shopping list built with MERN stack",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Oxymillan/MERN_todo_app.git"
   },
-  "author": "",
+  "author": "Jin Enomura",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Oxymillan/MERN_todo_app/issues"
